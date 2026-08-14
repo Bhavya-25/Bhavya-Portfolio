@@ -1,0 +1,18 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Commerce Storefront placeholder artwork">
+  <rect width="1600" height="1200" fill="#F2EFE8"/>
+  <g opacity="0.06">
+    <line x1="0" y1="200" x2="1600" y2="200" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1600" y2="500" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="800" x2="1600" y2="800" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="1100" x2="1600" y2="1100" stroke="#17140F" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="1200" stroke="#17140F" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="1200" stroke="#17140F" stroke-width="1"/>
+    <line x1="1200" y1="0" x2="1200" y2="1200" stroke="#17140F" stroke-width="1"/>
+  </g>
+  <rect x="260" y="260" width="300" height="380" rx="12" fill="#17140F" opacity="0.08"/>
+  <rect x="600" y="260" width="300" height="380" rx="12" fill="#D94F1E" opacity="0.85"/>
+  <rect x="940" y="260" width="300" height="380" rx="12" fill="#17140F" opacity="0.08"/>
+  <rect x="260" y="700" width="980" height="60" rx="10" fill="none" stroke="#17140F" stroke-width="2" opacity="0.35"/>
+  <circle cx="1220" cy="730" r="14" fill="#17140F" opacity="0.35"/>
+  <text x="80" y="1120" font-family="ui-monospace, monospace" font-size="24" fill="#17140F" opacity="0.4">02 / SHOPIFY — PLACEHOLDER</text>
+</svg>
