@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# QA — ephemeral run output only. QA-REPORT.md and visual baselines
+# (qa/tests/visual/**/*-snapshots/) are intentionally NOT ignored: the
+# report is the deliverable, and baselines are the golden reference images
+# future runs diff against.
+/qa/reports/html/
+/qa/reports/test-results/
+/qa/reports/results.json
+/qa/reports/performance/
+/qa/screenshots/
+/test-results/
+/playwright-report/
+/blob-report/

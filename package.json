@@ -6,7 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "qa": "npm run qa:smoke && npm run qa:functional && npm run qa:a11y && npm run qa:report",
+    "qa:full": "playwright test && npm run qa:performance && npm run qa:report",
+    "qa:smoke": "playwright test qa/tests/smoke",
+    "qa:functional": "playwright test qa/tests/functional qa/tests/journeys",
+    "qa:responsive": "playwright test qa/tests/responsive",
+    "qa:a11y": "playwright test qa/tests/a11y",
+    "qa:visual": "playwright test qa/tests/visual",
+    "qa:visual:update": "playwright test qa/tests/visual --update-snapshots",
+    "qa:performance": "node qa/utils/with-dev-server.mjs qa/utils/run-lighthouse.mjs",
+    "qa:report": "node qa/utils/generate-report.mjs",
+    "qa:show-report": "playwright show-report qa/reports/html"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -22,14 +33,18 @@
     "three": "^0.185.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/nodemailer": "^8.0.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/three": "^0.185.4",
+    "chrome-launcher": "^1.2.1",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
+    "lighthouse": "^13.4.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sketch and wireframe placeholder artwork">
+  <rect width="800" height="600" fill="#F2EFE8"/>
+  <g opacity="0.06">
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="450" x2="800" y2="450" stroke="#17140F" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="600" stroke="#17140F" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="#17140F" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="#17140F" stroke-width="1"/>
+  </g>
+  <rect x="140" y="160" width="220" height="340" rx="12" fill="none" stroke="#17140F" stroke-width="2" opacity="0.4"/>
+  <rect x="164" y="190" width="172" height="90" rx="6" fill="#17140F" opacity="0.08"/>
+  <rect x="164" y="296" width="172" height="14" rx="3" fill="#17140F" opacity="0.12"/>
+  <rect x="164" y="322" width="120" height="10" rx="3" fill="#17140F" opacity="0.1"/>
+  <rect x="164" y="440" width="172" height="36" rx="18" fill="#D94F1E" opacity="0.7"/>
+  <rect x="420" y="220" width="240" height="220" rx="12" fill="none" stroke="#17140F" stroke-width="2" opacity="0.3" stroke-dasharray="6 8"/>
+  <circle cx="540" cy="330" r="60" fill="none" stroke="#D94F1E" stroke-width="2" opacity="0.6"/>
+  <path d="M480 400 L600 400" stroke="#17140F" stroke-width="2" opacity="0.2"/>
+  <text x="140" y="560" font-family="ui-monospace, monospace" font-size="16" fill="#17140F" opacity="0.4">SKETCH — PLACEHOLDER</text>
+</svg>

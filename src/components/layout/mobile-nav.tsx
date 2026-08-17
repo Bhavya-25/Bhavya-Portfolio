@@ -137,7 +137,7 @@ export function MobileNav() {
         className="fixed inset-y-0 right-0 z-[60] flex w-[min(88vw,380px)] flex-col justify-between overflow-y-auto border-l border-border bg-surface px-6 pb-8 pt-24 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] lg:hidden"
         style={{ transform: isOpen ? "translateX(0)" : "translateX(101%)" }}
       >
-        <nav className="flex flex-col">
+        <nav aria-label="Mobile" className="flex flex-col">
           {mainNavigation.map((link) => (
             <Link
               key={link.href}
