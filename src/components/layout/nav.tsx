@@ -140,7 +140,7 @@ export function Nav() {
         </Link>
 
         {/* Desktop (≥1024px) */}
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
           {mainNavigation.map((item) =>
             item.megaMenu ? (
               <MegaTrigger

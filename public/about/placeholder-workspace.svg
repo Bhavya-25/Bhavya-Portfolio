@@ -1,0 +1,19 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workspace placeholder artwork">
+  <rect width="800" height="600" fill="#F2EFE8"/>
+  <g opacity="0.06">
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="450" x2="800" y2="450" stroke="#17140F" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="600" stroke="#17140F" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="#17140F" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="#17140F" stroke-width="1"/>
+  </g>
+  <rect x="120" y="220" width="560" height="320" rx="16" fill="none" stroke="#17140F" stroke-width="2" opacity="0.5"/>
+  <rect x="160" y="260" width="280" height="16" rx="4" fill="#17140F" opacity="0.12"/>
+  <rect x="160" y="292" width="200" height="12" rx="3" fill="#17140F" opacity="0.1"/>
+  <rect x="160" y="316" width="240" height="12" rx="3" fill="#17140F" opacity="0.1"/>
+  <circle cx="560" cy="380" r="90" fill="#D94F1E" opacity="0.85"/>
+  <circle cx="560" cy="380" r="90" fill="none" stroke="#17140F" stroke-width="2" opacity="0.3"/>
+  <rect x="160" y="460" width="480" height="8" rx="4" fill="#17140F" opacity="0.08"/>
+  <text x="120" y="580" font-family="ui-monospace, monospace" font-size="16" fill="#17140F" opacity="0.4">WORKSPACE — PLACEHOLDER</text>
+</svg>

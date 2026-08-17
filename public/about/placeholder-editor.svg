@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Code editor placeholder artwork">
+  <rect width="800" height="600" fill="#F2EFE8"/>
+  <g opacity="0.06">
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#17140F" stroke-width="1"/>
+    <line x1="0" y1="450" x2="800" y2="450" stroke="#17140F" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="600" stroke="#17140F" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="#17140F" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="#17140F" stroke-width="1"/>
+  </g>
+  <rect x="100" y="140" width="600" height="380" rx="16" fill="none" stroke="#17140F" stroke-width="2" opacity="0.5"/>
+  <circle cx="140" cy="175" r="6" fill="#D94F1E" opacity="0.7"/>
+  <circle cx="164" cy="175" r="6" fill="#17140F" opacity="0.25"/>
+  <circle cx="188" cy="175" r="6" fill="#17140F" opacity="0.25"/>
+  <rect x="130" y="210" width="80" height="280" fill="#17140F" opacity="0.04"/>
+  <rect x="150" y="230" width="40" height="10" rx="2" fill="#17140F" opacity="0.15"/>
+  <rect x="150" y="252" width="30" height="10" rx="2" fill="#17140F" opacity="0.1"/>
+  <rect x="150" y="274" width="45" height="10" rx="2" fill="#17140F" opacity="0.1"/>
+  <rect x="240" y="230" width="220" height="12" rx="3" fill="#D94F1E" opacity="0.5"/>
+  <rect x="240" y="258" width="320" height="12" rx="3" fill="#17140F" opacity="0.12"/>
+  <rect x="270" y="286" width="260" height="12" rx="3" fill="#17140F" opacity="0.1"/>
+  <rect x="270" y="314" width="180" height="12" rx="3" fill="#17140F" opacity="0.1"/>
+  <rect x="240" y="342" width="300" height="12" rx="3" fill="#17140F" opacity="0.1"/>
+  <rect x="240" y="398" width="140" height="60" rx="8" fill="#D94F1E" opacity="0.15"/>
+  <text x="100" y="560" font-family="ui-monospace, monospace" font-size="16" fill="#17140F" opacity="0.4">EDITOR — PLACEHOLDER</text>
+</svg>

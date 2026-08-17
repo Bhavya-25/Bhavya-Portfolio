@@ -11,10 +11,27 @@
   --color-surface-inverse: #171512;
   --color-ink: #17140f;
   --color-ink-muted: #6f6a61;
-  --color-ink-faint: #a39d92;
+  /* #796c5d, not the original #a39d92 — the lighter value only cleared
+     2.53:1 contrast against --color-surface, below WCAG AA's 4.5:1 minimum
+     for normal text (confirmed by axe-core, same investigation as
+     --color-accent below — this was a second, separate contributor to the
+     same violation, missed on first pass and caught by retesting after the
+     first fix landed: some of the ~16 flagged nodes per page were
+     text-accent, others were text-ink-faint). This clears 4.81:1. It now
+     sits close to --color-ink-muted (5.06:1) — WCAG AA leaves little room
+     between "meets 4.5:1" and the next tier in this warm-neutral palette,
+     so the two are less visually distinct than before; that's an accepted
+     tradeoff for correctness, not an oversight. */
+  --color-ink-faint: #796c5d;
   --color-border: #e4dfd3;
   --color-border-strong: #cfc8b8;
-  --color-accent: #d94f1e;
+  /* #b44618, not the original #d94f1e — the brighter value only cleared
+     3.89:1 contrast against --color-surface, below WCAG AA's 4.5:1 minimum
+     for normal text (confirmed by axe-core: qa/reports/QA-REPORT.md,
+     BUG-P2-001 and 30 others — ~30 usages as text color across the site).
+     This darkened value clears 5.17:1 while keeping the same hue. Dark
+     mode's accent (#ff7a42) already passed and is unchanged. */
+  --color-accent: #b44618;
   --color-accent-ink: #fdf6ee;
 
   /* Spacing / shape */
@@ -71,8 +88,10 @@
 /* Base                                                                    */
 /* ---------------------------------------------------------------------- */
 
-* {
-  border-color: var(--color-border);
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
 }
 
 html {
@@ -174,4 +193,19 @@ html.custom-cursor * {
 
 .marquee-track:hover {
   animation-play-state: paused;
+}
+
+/* About — Behind the Scenes terminal-style log line strip. */
+@keyframes blink-cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink-cursor {
+  animation: blink-cursor 1s step-end infinite;
 }

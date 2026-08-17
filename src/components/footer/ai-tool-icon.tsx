@@ -8,7 +8,10 @@ export type AiToolIconKind =
   | "windsurf"
   | "bolt"
   | "v0"
-  | "figma";
+  | "figma"
+  | "vscode"
+  | "postman"
+  | "github";
 
 const ICON_PROPS = {
   viewBox: "0 0 24 24",
@@ -114,6 +117,32 @@ function FigmaIcon() {
   );
 }
 
+function VscodeIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <path d="M16.5 3.5 8 10.5 4.5 8 3 9l4 4-4 4 1.5 1 3.5-2.5 8.5 7 3.5-1.7V5.2Z" />
+      <path d="M16.5 3.5v17" />
+    </svg>
+  );
+}
+
+function PostmanIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <circle cx="12" cy="12" r="8" />
+      <path d="m14.5 9.5-5 5M15 14l1.5 1.5M9.5 9 8 7.5" />
+    </svg>
+  );
+}
+
+function GithubIcon() {
+  return (
+    <svg {...ICON_PROPS}>
+      <path d="M9 19c-4 1.2-4-2-5.5-2.5M17 22v-2.9c0-.8-.3-1.5-.7-2 2.5-.3 5-1.5 5-5.7 0-1.2-.5-2.2-1.2-3 .1-.3.5-1.5-.1-3.2 0 0-1-.3-3.2 1.2a11 11 0 0 0-5.6 0C9 5 8 5.3 8 5.3c-.6 1.7-.2 2.9-.1 3.2A4.6 4.6 0 0 0 6.7 11.5c0 4.1 2.5 5.4 5 5.7-.3.4-.6 1-.7 1.8-.6.3-2.2.8-3.2-1-.6-1-1.6-1.1-1.6-1.1" />
+    </svg>
+  );
+}
+
 const ICONS: Record<AiToolIconKind, () => React.JSX.Element> = {
   chatgpt: ChatgptIcon,
   claude: ClaudeIcon,
@@ -125,6 +154,9 @@ const ICONS: Record<AiToolIconKind, () => React.JSX.Element> = {
   bolt: BoltIcon,
   v0: V0Icon,
   figma: FigmaIcon,
+  vscode: VscodeIcon,
+  postman: PostmanIcon,
+  github: GithubIcon,
 };
 
 export function AiToolIcon({ kind }: { kind: AiToolIconKind }) {
